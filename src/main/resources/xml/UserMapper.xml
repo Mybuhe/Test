@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.my.homework.dao.UserDao">
+<select id="">
+  select u.*,r.roleName
+  from s_user u,s_role r
+  where u.userName like CONCAT('%',#{userName},'%')
+  and u.userRole=#{userRole} and u.userRole=r.id
+</select>
+
+
+</mapper>
